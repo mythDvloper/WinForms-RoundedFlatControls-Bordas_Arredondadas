@@ -39,3 +39,15 @@ No seu projeto WinForms:
 
    ```csharp
    this.FormBorderStyle = FormBorderStyle.None;
+
+2. **No seu código, instancie a classe responsável pelas bordas:**
+   
+   ```csharp
+   WinForms_RoundedFlatControls.Forms.RoundedForm roundedForm = new WinForms_RoundedFlatControls.Forms.RoundedForm();
+
+3. **No evento Load ou no construtor do formulário, chame:**
+
+   ```csharp
+   roundedForm.SetRoundedRegion(this);
+
+4. **✅Execute o projeto. Seu formulário aparecerá com bordas arredondadas!**
