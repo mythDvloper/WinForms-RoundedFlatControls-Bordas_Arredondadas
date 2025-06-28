@@ -1,19 +1,41 @@
 # WinForms-RoundedFlatControls
 
-Controles para WinForms .NET Framework 4.8.
+🎨 **Controles personalizados para Windows Forms (.NET Framework 4.8)**
 
-Para usar:
+Este projeto contém diversos controles visuais com design minimalista e bordas arredondadas para aplicações WinForms.
 
-1 - Compile o projeto
-2 - Crie um projeto Windows Forms .NET Framework 4.8 (não funciona no .NET)
-3 - Adicione a referência
+---
 
-Para deixar o Form com bordas arredondadas: 
-1 - De preferência deixe o form com BorderStyli = None (a função já irá deixar assim de qualquer forma)
-2 - No Code-Behind, instancie a classe, exemplo: 
-    "WinForms_RoundedFlatControls.Forms.RoundedForm RoundedForm = new WinForms_RoundedFlatControls.Forms.RoundedForm();"
+## ⚙️ Como Usar
 
-3 - Chame a função no Load do formulário ou no construtor e passe o formulário como parâmetro, utilizando o exemplo acima:
-    RoundedForm.SetRoundedRegion(this);
+### ✅ Passo 1 - Compile o Projeto
 
-4 - Quando você rodar o projeto, o Form estará com as bordas arredondadas!
+Clone ou baixe este repositório e compile a solução no Visual Studio.
+
+---
+
+### ✅ Passo 2 - Crie um Projeto Windows Forms
+
+Crie um novo projeto **Windows Forms Application (.NET Framework 4.8)**.
+
+> ⚠️ **Atenção:**  
+> Não funciona em .NET Core ou .NET 5/6/7.
+
+---
+
+### ✅ Passo 3 - Adicione a Referência
+
+No seu projeto WinForms:
+
+1. Clique com o botão direito em **Referências**.
+2. Selecione **Adicionar Referência...**.
+3. Clique em **Procurar...** e selecione o DLL compilado.
+
+---
+
+## 🪟 Como Deixar o Form com Bordas Arredondadas
+
+1. **Defina a borda do formulário como `None`:**
+
+   ```csharp
+   this.FormBorderStyle = FormBorderStyle.None;
